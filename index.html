@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CassFlix - Seus Filmes Favoritos estão aqui</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body class="bg-secondary">
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+           <div class="container">
+            <h1 class="text-danger h2 fw-bold">CASSFLIX</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fd0d28" class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                    <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active-noneY" href="#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#series">Séries</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#filmes">Filmes</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#bombando">Bombando</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#lista">Minha Lista</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn" id="btn-checar-emails" type="button">Favoritos</button>
+           </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <div class="container">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner col-sm-12 col-md-6 col-lg-4">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block" src="./images/seguranca_shop.png" alt="images1">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-30" src="./images/risco_duplo.png" alt="imag2">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-30" src="./images/tom_cruise.png" alt="images">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1" ></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2" ></button>
+                </div>
+            </div>
+        </div>
+    <div class="container mt-5">
+        <div class="row g-3">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark d-flex">
+                    <header class="card-header fs-4">
+                        Populares na <span class="text-danger fw-bold">CASSFLIX</span>
+                    </header>
+                    <img src="./images/seguranca_shop.webp" alt="imagem" />
+                    <div class="card-body">
+                        <h4 class="card-title">Segurança de Shopping</h4>
+                        <p class="card-text text-align-justify">
+                            O dedicado seguraça de um shopping center faz de tudo para impedir
+                            os planos de um inteligente criminoso de roubar o shopping inteiro
+                        </p>
+                        <div class="detalhes d-flex">
+                            <a href="#" class="btn btn-primary">Mais Informções +</a>
+                            <span class="material-symbols-outlined">
+                                thumb_up
+                            </span>
+                            <span class="material-symbols-outlined">
+                                heart_plus
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark d-flex">
+                    <header class="card-header fs-4">
+                        Populares na <span class="text-danger fw-bold">CASSFLIX</span>
+                    </header>
+                    <img src="./images/amizade_colorida.webp" alt="imagem" />
+                    <div class="card-body">
+                        <h4 class="card-title">Amizade Colorida</h4>
+                        <p class="card-text text-align-justify">
+                            Solteiros e ocupados com as suas carreiras, 
+                            eles decidem deixar a sua amizade mais colorida com sexo casual, passando longe do romance.
+                        </p>
+                        <div class="detalhes d-flex">
+                            <a href="#" class="btn btn-primary">Mais Informções +</a>
+                            <span class="material-symbols-outlined">
+                                thumb_up
+                            </span>
+                            <span class="material-symbols-outlined">
+                                heart_plus
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark d-flex">
+                    <header class="card-header fs-4">
+                        Populares na <span class="text-danger fw-bold">CASSFLIX</span>
+                    </header>
+                    <img src="./images/tom_cruise.webp" alt="imagem" />
+                    <div class="card-body">
+                        <h4 class="card-title">Jack Reacher - O último tiro</h4>
+                        <p class="card-text text-align-justify">
+                            O ex-militar Reacher é convocado para ajudar no caso de um atirador e se une à advogada de defesa para
+                            investigar. Mas a dupla logo se vê envolvida...
+                        </p>
+                        <div class="detalhes d-flex">
+                            <a href="#" class="btn btn-primary">Mais Informções +</a>
+                            <span class="material-symbols-outlined">
+                                thumb_up
+                            </span>
+                            <span class="material-symbols-outlined">
+                                heart_plus
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark d-flex">
+                    <header class="card-header fs-4">
+                        Lançamento na <span class="text-danger fw-bold">CASSFLIX</span>
+                    </header>
+                    <img src="./images/jovem_sheldon.webp" alt="imagem" />
+                    <div class="card-body">
+                        <h4 class="card-title">Jovem Sheldon</h4>
+                        <p class="card-text text-align-justify">
+                            Sheldon Cooper, um menino brilhante e esquisito de nove anos,
+                            vai deixar o ensino médio inteiro de queixo caído. Um spin-of de The Bih bang Theory.
+                        </p>
+                        <div class="detalhes d-flex">
+                            <a href="#" class="btn btn-primary">Mais Informções +</a>
+                            <span class="material-symbols-outlined">
+                                thumb_up
+                            </span>
+                            <span class="material-symbols-outlined">
+                                heart_plus
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark d-flex">
+                    <header class="card-header fs-4">
+                        Lançamento na <span class="text-danger fw-bold">CASSFLIX</span>
+                    </header>
+                    <img src="./images/one_piece.jpg" alt="imagem" />
+                    <div class="card-body">
+                        <h4 class="card-title">One Piece - A série</h4>
+                        <p class="card-text text-align-justify">
+                            O jovem pirata Monkey D. Luffy veste o chapéu de palha e, com sua
+                            tripulação atrapalhada, zarpa em uma jornada épica nesta adaptação em live-action...
+                        <div class="detalhes d-flex">
+                            <a href="#" class="btn btn-primary">Mais Informções +</a>
+                            <span class="material-symbols-outlined">
+                                thumb_up
+                            </span>
+                            <span class="material-symbols-outlined">
+                                heart_plus
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card text-bg-dark d-flex">
+                    <header class="card-header fs-4">
+                        Lançamento na <span class="text-danger fw-bold">CASSFLIX</span>
+                    </header>
+                    <img src="./images/erin.jpg" alt="imagem" />
+                    <div class="card-body">
+                        <h4 class="card-title">Quem é Erin Carter</h4>
+                        <p class="card-text text-align-justify">
+                            A vida tranquila de uma mulher inglesa em Barcelona vira de cabeça para baixo depois que um assalto
+                            em um supermercado expõe seu passado secreto...
+                        </p>
+                        <div class="detalhes d-flex">
+                            <a href="#" class="btn btn-primary">Mais Informções +</a>
+                            <span class="material-symbols-outlined">
+                                thumb_up
+                            </span>
+                            <span class="material-symbols-outlined">
+                                heart_plus
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="container mt-5 text-light">
+            <footer>
+                <p>&copyCASSFLIX 2023 - Todos os direitos reservados</p>
+            </footer>
+        </div>
+    </div>
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" role="alert">
+        <div class="toast" id="mensagens-alerta">
+            <header class="toast-header bg-success">
+                <strong class="text-white">Importante</strong>
+            </header>
+            <div class="toast-body">
+                Você possui 5 filmes favoritados em sua lista!
+                <div class="mt-2 pt-2 border-top">
+                    <button data-bs-dismiss="toast" class="btn btn-success m-2 p-1" type="button">
+                        Descartar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails')
+
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new bootstrap.Toast(mensagem);
+                toast.show();
+            })
+        }
+    </script>
+</body>
+</html>

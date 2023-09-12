@@ -1,0 +1,76 @@
+.card-img-overlay {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.card-text {
+    width: 100%;
+    text-align: justify;
+}
+
+.material-symbols-outlined {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover{
+    color: rgb(155, 236, 16);
+    font-size: 30px;
+}
+
+.detalhes {
+    position: left;
+    align-items: center;
+}
+
+.navbar-toggler {
+    border: none;
+}
+.navbar-nav .nav-link.active {
+    color: #fff;
+}
+
+.nav-link {
+    text-align: center;
+    color: #fff;
+}
+
+.nav-link:hover {
+   color: red;
+   text-decoration: underline;
+}
+
+.btn {
+    color: #fff;
+}
+
+.btn:hover {
+    color: rgb(13, 255, 0);
+    text-decoration: underline;
+}
+
+section {
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 230px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #151515;
+}
+
+body{
+    background-color: black;
+}
+
+.d-block {
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+footer p {
+    text-align: center;
+
+}
