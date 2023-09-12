@@ -74,3 +74,15 @@ footer p {
     text-align: center;
 
 }
+
+@media screen and (max-width: 820px) {
+    .corousel-inner .foto-banner {
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel .corousel-item img {
+
+    }
+}
