@@ -12,6 +12,11 @@
     cursor: pointer;
 }
 
+.material-symbols-outlined:hover{
+    color: rgb(155, 236, 16);
+    font-size: 30px;
+}
+
 .detalhes {
     position: left;
     align-items: center;
@@ -38,7 +43,7 @@
     color: #fff;
 }
 
-.btn:hover {
+.btn-favoritos:hover {
     color: rgb(13, 255, 0);
     text-decoration: underline;
 }
